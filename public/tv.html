@@ -119,7 +119,7 @@
          background: #0f1318;
      }
      .nav-right>.login:hover{
-         background-color:#1565c0;
+        background-color:#1565c0;
          color: #fff;
      }
      .nav-right>.login,.nav-right>.try-now{
@@ -138,7 +138,7 @@
          background-color: #1565c0;
      }
      .nav-right>.try-now:hover{
-         background-color: #fff;
+        background-color: #fff;
          color: #1565c0;
      }
     .wrap{
@@ -153,6 +153,7 @@
       left: 3%;
       padding: 30px 0;
       border-radius: 10px;
+      animation: navbar1 forwards;
       
       
 
@@ -230,16 +231,16 @@
     .type{
       position: absolute;
       left: -10%;
-      top:-50%;
+      top:-80%;
       font-weight: 500;
       font-size: .8rem;
       color:#fff;
-      opacity: 0.8;
+      opacity: 1;
     }
     .name{
       position: absolute;
       left: -10%;
-      top:-30%;
+      top:-40%;
       font-weight: 700;
       color: #fff;
     }
@@ -274,8 +275,8 @@
     }
     .des{
       position: relative;
-      margin-top:3%;
-      padding-top: 3%;
+      margin-top:0%;
+      padding-top: 0;
       margin-left: -10%;
       text-align: left;
       width: 600px;
@@ -325,9 +326,67 @@
     }
     .play-store{
       position: absolute;
-      bottom: -25%;
+      bottom: -40%;
     }
-    .a{
+    .continue-watching{
+        position: relative;
+        margin-left: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .continue-watching>.description{
+        width: 50%;
+    }
+    .continue-watching>.casters{
+        margin-right: 10%;
+    }
+    .history{
+        position: relative;
+        margin-left: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .history>.image{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .history>.image>img{
+        border-radius: 10px;
+        height: 120px;
+    }
+    .history>ul{
+        position:absolute;
+        margin-left: 25%;
+    }
+    .history>.font{
+        position:absolute;
+        top: 1%;
+        right: 7%;
+        font-size: 14px;
+    }
+    .season-btn>a{
+        text-decoration: none;
+    }
+    .season-btn{
+        position: relative;
+        margin-left:-350px;
+        margin-bottom: 0px;
+    }
+    .season-btn>a{
+        color: #fff;
+        background-color: #0f1318; 
+        transition: .4s ease;
+    }
+    .season-btn>a:hover{
+        background-color: #fff;
+        color: #0f1318;
+    }
+            .a{
                 animation: navbar 0.20s ease-in;
             }
              .b{
@@ -402,14 +461,14 @@
               
             }
         }
-    
+
       </style>
   </head>
   <body>
     <nav>
       <div>
           <div class="logo">
-            <i style="color: rgb(25, 0, 255); margin: 3px;" class="fab fa-affiliatetheme fa-2x"></i>
+             <i style="color: rgb(25, 0, 255); margin: 3px;" class="fab fa-affiliatetheme fa-2x"></i>
               <h2 style="color: #fff;"> Cinemeye</h2>
           </div>
        
@@ -430,10 +489,10 @@
     <div class="menu">
       <ul>
         <h4>Catagories</h4>
-        <li class="active-li a j"><a href="#"><i class="fas fa-home"></i>Main page</a></li>
+        <li class="a j"><a href="index.html"><i class="fas fa-home"></i>Main page</a></li>
         <li class="b k"> <a href="#"><i class="fas fa-tv"></i>TV-channels</a></li>
         <li class="c l"><a href="#"><i class="fas fa-film"></i>Movies</a></li>
-        <li class="d m"><a href="tv.html"><i class="fas fa-compact-disc"></i>TV series</a></li>
+        <li class="active-li d m"><a href="#"><i class="fas fa-compact-disc"></i>TV series</a></li>
         <li class="e n"><a href="#"><i class="fas fa-drum-steelpan"></i>Concerts</a></li>
         <li class="f o"><a href="#"><i class="fas fa-volleyball-ball"></i>Sport</a></li>
         <li class="g p"><a href="#"><i class="fas fa-baby"></i>For Kids</a></li>
@@ -443,78 +502,84 @@
     </div>
     <div class="main-content" style="color: #fff;">
        <div class="slide-show">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
+        
+         
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://assets.nrdc.org/sites/default/files/styles/header_background_mobile/public/import/hero-image/Interstellar-hero_0_0.jpg?itok=GulK8MBC" class="d-block w-100" alt="...">
+              <img src="https://www.denofgeek.com/wp-content/uploads/2018/04/the-flash-season-5-release-date-news-villain-story.jpg?fit=1200%2C900" style="opacity: .6;" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <p class="type">Action | Drama |Movie | Adventures</p>
-                <h2 class="name">Interstellar</h2>
-                <a class="trailer" href="#" style="text-decoration: none;"><i class="fas fa-play-circle"></i>Watch trailer</a>
-                <a href="#" style="text-decoration: none;" class="fav"><i class="fas fa-star"></i>Add to Favourites</a>
-                <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem voluptatum itaque dolorem molestias earum id culpa dignissimos magni pariatu.</p>
+                <p class="type">Action | Drama |Series| Adventures | 2018</p>
+                <h2 class="name">The Flash</h2>
+                <p class="des">The Flash is an American superhero television series developed by Greg Berlanti, Andrew Kreisberg, and Geoff Johns, airing on The CW.</p>
+                <p class="season-btn ">
+                    <a style="color: #0f1318; background:#fff;border-radius: 15px;padding: 5px 10px;" href="#">Season 1</a>
+                    <a  style="border-radius: 15px;padding: 5px 10px;" href="#">Season 2</a>
+                    <a  style="border-radius: 15px;padding: 5px 10px;" href="#">Season 3</a>
+                    <a  style="border-radius: 15px;padding: 5px 10px;" href="#">Season 4</a>
+                </p>
                 <p class="rating"><a  href="#">IMDB</a>9.1</p>
               </div>
 
             </div>
-            <div class="carousel-item">
-              <img src="https://woodsidepawprint.com/wp-content/uploads/2019/04/avengers_endgame_poster_wallpaper_hdoficial_byandrew_vm-e1552652545172.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <p class="type">Action | Drama |Movie | Adventures</p>
-                <h2 class="name">Avengers Endgame</h2>
-                <a class="trailer" href="#" style="text-decoration: none;"><i class="fas fa-play-circle"></i>Watch trailer</a>
-                <a href="#" style="text-decoration: none;" class="fav"><i class="fas fa-star"></i>Add to Favourites</a>
-                <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem voluptatum itaque dolorem molestias earum id culpa dignissimos magni pariatu.</p>
-                <p class="rating"><a href="#">IMDB</a>8.5</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://blisssaigon.com/wp-content/uploads/2018/08/Feature-Inception.jpeg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <p class="type">Action | Drama |Movie | Adventures</p>
-                <h2 class="name">Inception</h2>
-                <a class="trailer" href="#" style="text-decoration: none;"><i class="fas fa-play-circle"></i>Watch trailer</a>
-                <a href="#" style="text-decoration: none;" class="fav"><i class="fas fa-star"></i>Add to Favourites</a>
-                <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem voluptatum itaque dolorem molestias earum id culpa dignissimos magni pariatu.</p>
-                <p class="rating" ><a style="opacity: 1;" href="#">IMDB</a>9.5</p>
-              </div>
+            
             </div>
           </div>
-          <a class="carousel-control-prev left-arrow" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next right-arrow" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+         
         </div>
        </div>
       </div>
   </div>
-  <div class="grid-box">
-    <div class="title-collection"><h5>Movie Collections</h5></div>
-    <div class="movie-collection">
-         <div class="box"><img class="fit-img"src="https://api.time.com/wp-content/uploads/2014/06/844558_full.jpg?w=600&quality=85"  height="100px" width="150px"/><p style=" background-color: #0f1318">Action</br><span style="font-size: 10px;">collection of films that amaze</span</p></div>
-         <div class="box"><img class="fit-img" src="https://townsquare.media/site/442/files/2017/05/baywatch-2017-movie-4k-qhd.jpg?w=980&q=75" height="100px" width="150px"/><p style=" background-color: #0f1318">Comedy<br><span style="font-size: 10px;">collection of films that amaze</span</p></div>
-         <div class="box"><img class="fit-img" src="https://movieposters2.com/images/1603486-b.jpg" height="100px" width="150px"/><p style=" background-color: #0f1318">Drama<br><span style="font-size: 10px;">collection of films that amaze</span</p></div>
-         <div class="box"><img class="fit-img" src="https://images-na.ssl-images-amazon.com/images/I/81fvNfPZBsL._RI_.jpg" height="100px" width="150px"/><p style=" background-color: #0f1318">Sceince<br><span style="font-size: 10px;">collection of films that amaze</span</p></div>
-         <div class="box"><img class="fit-img" src="https://upload.wikimedia.org/wikipedia/en/3/3c/JumanjiTheNextLevelTeaserPoster.jpg" height="100px" width="150px"/><p style=" background-color: #0f1318">Adventures<br><span style="font-size: 10px;">collection of films that amaze</span</p></div>
-         <div class="box"><img class="fit-img" src="https://bronaghdoc10.files.wordpress.com/2014/12/img_2419.jpg" height="100px" width="150px"/><p style= " background-color: #0f1318">Animation<br><span style="font-size: 10px;">collection of films that amaze</span</p></div>
+  <div class="history">
+    <div class="image carousel-item">
+         <img src="https://snworksceo.imgix.net/car/3295abf0-8854-48a7-abb5-c0a571d6bf4a.sized-1000x1000.png?w=1000" class="d-block w-80"alt="...">
+         <div class="carousel-caption d-none d-md-block "style="position:absolute;top:20%;left:30%">
+         <a  class="trailer" href="#" style="background: transparent; color:#fff; text-decoration: none;"><i class="far fa-play-circle fa-3x"></i></a>
+              
+         </div>
     </div>
+        <ul>
+            <li style="color: #fff;">Continue watching</li>
+            <li style="color: #474849;">Season 1 season 2</li>
+            <li style="color:#bcc6d4;">"The Flash"</li>
+        </ul>
+        <div class="font">
+            <a style="text-decoration: none; color: rgba(255, 255, 255, 0.637); background:#0f1318 ; padding:5px ;border-radius: 5px;" href="#"><span style="color: rgb(0, 255, 255);"><i style="margin: 3px;" class="fas fa-star" ></i></span>In Favourites</a><br><br>
+           
+            <a style="text-decoration: none; color: rgba(255, 255, 255, 0.637); background:#0f1318 ;border-radius: 3px; padding: 5px;" href="#"><span style="color: #fff;"><i style="margin: 3px;" class="fas fa-play-circle"></i></span>Watch trailer</a>
+          </div>
+     </div>
+   
+  </div> 
+  <div class="continue-watching">
+      <div class="description" style="font-size: 13px; color: #fff;">
+         <h6>Decsription</h6>
+         <p style="font-size: 10px;color:#bcc6d4 ;">The first season follows crime-scene investigator Barry Allen who gains super-human speed after the explosion of the S.T.A.R. Labs' particle accelerator which he uses to fight crime and hunt other metahumans in Central City as the Flash, a masked superhero.[1] Barry pursues his mother's murderer, Eobard Thawne, eventually uncovering that his mentor Harrison Wells is Eobard in disguise.</p>
+     </div>
+     <div class="casters" style="font-size: 13px;">
+         <p>Starring<span style="color: #fff;" >&nbsp &nbsp	&nbsp &nbsp
+            Greg Berlanti,
+            Andrew Kreisberg
+            </span></p>
+         <p>Genre<span style="color: #fff;">&nbsp &nbsp &nbsp &nbsp &nbsp 
+            Superhero,
+            Drama,
+            Action,</span></p>
+         <p>Composer<span style="color: #fff;">&nbsp &nbsp Blake Neely</span></p>
+         <p>Producer(s)<span style="color: #fff;">&nbsp &nbsp J.P. Finn,
+            Emily Silver,
+           </span></p>
+     </div>
+     
+  </div>
+  <div class="grid-box">
     <div class="title-new"><h5>New</h5></div>
     <div class="new-collection">
-        <div class="box"><img class="fit-img" src="https://m.media-amazon.com/images/M/MV5BZDZlMjc0MTItZWY2YS00ZDJhLWI2M2MtODVjNWFmYTQxYmJjXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UY1200_CR64,0,630,1200_AL_.jpg" height="100px" width="150px"/><p style= " background-color: #0f1318">Fast and Furious<br><span style="font-size: 10px;">Action, Drama</span</p></div>
-        <div class="box"><img class="fit-img" src="https://i.ytimg.com/vi/lo9nEwHyvt4/movieposter.jpg" height="100px" width="150px"/><p style= " background-color: #0f1318">Martian<br><span style="font-size: 10px;">Action, Drama,Animation</span</p></div>
-         <div class="box"><img class="fit-img" src="https://resizing.flixster.com/V4AjAI-3nolBM2DNyt7goOo0qtk=/206x305/v1.bTsxMTE3MjcwMDtqOzE4NjI0OzEyMDA7MTQwMDsyMTAw" height="100px" width="150px"/><p style= " background-color: #0f1318">Olympus Has Fallen<br><span style="font-size: 10px;">Action, Drama</span</p></div>
-        <div class="box"><img class="fit-img" src="https://images-na.ssl-images-amazon.com/images/I/71y%2BE9MaURL._AC_SL1260_.jpg" height="100px" width="150px"/><p style= " background-color: #0f1318">Aquaman<br><span style="font-size: 10px;">Action, Drama,Adventures</span</p></div>
-        <div class="box"><img class="fit-img" src="https://contentserver.com.au/assets/511728_p10989225_p_v8_ak.jpg" height="100px" width="150px"/><p style= " background-color: #0f1318">Civil War<br><span style="font-size: 10px;">Action, Drama,Adventures</span</p></div>
-        <div class="box"><img class="fit-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/220px-Joker_%282019_film%29_poster.jpg" height="100px" width="150px"/><p style= " background-color: #0f1318">Joker<br><span style="font-size: 10px;">Action, Drama,</span</p></div>
+        <div class="box"><img class="fit-img" src="https://static.next-episode.net/tv-shows-images/huge/the-originals.jpg" height="100px" width="150px"/><p style= " background-color: #0f1318">The Original<br><span style="font-size: 10px;">Episode 1</span</p></div>
+        <div class="box"><img class="fit-img" src="https://www.exploregeorgia.org/sites/default/files/styles/slideshow_large/public/legacy_images/the-originals-contest-photo-1379948983.jpg?itok=3o8jbWdz" height="100px" width="150px"/><p style= " background-color: #0f1318">Chestnut<br><span style="font-size: 10px;">Episode 2 </span</p></div>
+         <div class="box"><img class="fit-img" src="https://decider.com/wp-content/uploads/2020/07/THE-ORIGINALS-.jpg?quality=80&strip=all&w=1200" height="100px" width="150px"/><p style= " background-color: #0f1318">The Stray<br><span style="font-size: 10px;">Episode 3</span</p></div>
+        <div class="box"><img class="fit-img" src="https://tvseriesfinale.com/wp-content/uploads/2016/03/The-Originals-TV-show-on-The-CW-season-4-renewal-590x329.png" height="100px" width="150px"/><p style= " background-color: #0f1318">Dissonance Theory<br><span style="font-size: 10px;">Episode 4</span</p></div>
+        <div class="box"><img class="fit-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5QhsghOmAm5vpqkt-gsKD9giSBMRRABNAAA&usqp=CAU" height="100px" width="150px"/><p style= " background-color: #0f1318">Contrap<br><span style="font-size: 10px;">Episode 5</span</p></div>
+        <div class="box"><img class="fit-img" src="https://pmcvariety.files.wordpress.com/2017/03/the-originals.jpg" height="100px" width="150px"/><p style= " background-color: #0f1318">Variety<br><span style="font-size: 10px;">Episode 6</span</p></div>
     </div>
    </div>
    <div class="play-store">
